@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <style>
+    #form{
+        background-image: url(https://media.istockphoto.com/id/1212284111/es/foto/luz-azul-desenfocado-desenfoque-movimiento-borroso-fondo-abstracto.webp?b=1&s=170667a&w=0&k=20&c=yhnUqRTuC01qaInTaqDQH_COiRWIwtEP2QaiP2Y7dMA=);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    form{
+        width: 500px;
+        border: 2.5px solid;
+        margin: auto;
+        border-radius: 15px;
+        backdrop-filter: blur(120px);
+        color: white;
+        h1{
+            text-align: center;
+        }
+        div{
+            position: relative;
+            left: calc(500px/3.5);
+            width: 200px;
+            *{
+                margin: 10px;
+                display: flex;
+            }
+            button{
+                display: inline;
+            }
+        }
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body id="form">
+    <form  action="">
+        <h1>Registrarse</h1>
+        <div>
+
+            <label for="">Ingrese su nombre: </label> <input type="text" required>  
+            <label for="">Ingrese su apellido: </label> <input type="text" required>  
+            <label for="">Ingrese su correo: </label> <input type="email" required>  
+            <label for="">Ingrese su numero de telefono: </label> <input type="tel" required>  
+            <label for="">Ingrese su fecha de nacimiento:</label> <input type="date" required>  
+            <label for="">Sexo:</label> <label for=""> Hombre<input type="checkbox" name="" id=""></label> <label for=""> Mujer <input type="checkbox" name="" id=""></label>
+            
+            <label for="">Ingrese su contraseña: </label> <input type="password" required>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+            <a href="../index.html" class="nav__link">Regresar</a>
+        </div>
+    </form>
+</body>
+</html>
